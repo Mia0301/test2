@@ -32,6 +32,11 @@ stc.html(html_temp)
 # df_original.to_pickle('kbars_2330_2022-01-01-2022-11-18.pkl')
 
 ## 读取Pickle文件
+@st.cache_data(ttl=3660,show_spinner='正在加載資料...')
+def load_data(url):
+    df=pd.read_pickle(url)
+    return df
+	
 df_original = pd.read_pickle('kbars_2330_2022-01-01-2022-11-18.pkl')
 
 
@@ -113,7 +118,7 @@ KBar_dic['amount']=np.array(KBar_amount_list)
 Date = start_date.strftime("%Y-%m-%d")
 
 st.subheader("設定一根 K 棒的時間長度(分鐘)")
-cycle_duration = st.number_input('輸入一根 K 棒的時間長度(單位:分鐘, 一日=1440分鐘)',value=1440, key="KBar_duration")
+cycle_duration = st.number_input('輸入一根 K 棒的時間長度(單位:分鐘, 一日=1440分鐘)',value=2880, key="KBar_duration")
 cycle_duration = int(cycle_duration)
 #cycle_duration = 1440   ## 可以改成你想要的 KBar 週期
 #KBar = indicator_f_Lo2.KBar(Date,'time',2)
