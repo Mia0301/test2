@@ -18,20 +18,26 @@ html_temp = """
 		<div style="background-color:#3872fb;padding:10px;border-radius:10px">
 		<h1 style="color:white;text-align:center;">金融資料視覺化呈現 (金融看板) </h1>
 		<h2 style="color:white;text-align:center;">Financial Dashboard </h2>
-		</div>
-                <div class="grid-item">
-                    <h2>Subtitle 2</h2>
-                    <p>Content for subtitle 2.</p>
-                </div>
-                <div class="grid-item">
-                    <h2>Subtitle 3</h2>
-                    <p>Content for subtitle 3.</p>
-                </div>
-                <div class="grid-item">
-                    <h2>Subtitle 4</h2>
-                    <p>Content for subtitle 4.</p>
-                </div>
-		"""
+    <div class="container">
+        <h1>Main Title</h1>
+        <div class="grid">
+            <div class="grid-item">
+                <h2>Subtitle 1</h2>
+                <p>Content for subtitle 1.</p>
+            </div>
+            <div class="grid-item">
+                <h2>Subtitle 2</h2>
+                <p>Content for subtitle 2.</p>
+            </div>
+            <div class="grid-item">
+                <h2>Subtitle 3</h2>
+                <p>Content for subtitle 3.</p>
+            </div>
+            <div class="grid-item">
+                <h2>Subtitle 4</h2>
+                <p>Content for subtitle 4.</p>
+            </div>
+            """
 stc.html(html_temp)
 
 
