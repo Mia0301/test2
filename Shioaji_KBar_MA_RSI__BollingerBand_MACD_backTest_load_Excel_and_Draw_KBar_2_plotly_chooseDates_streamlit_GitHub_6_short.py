@@ -19,6 +19,18 @@ html_temp = """
 		<h1 style="color:white;text-align:center;">金融資料視覺化呈現 (金融看板) </h1>
 		<h2 style="color:white;text-align:center;">Financial Dashboard </h2>
 		</div>
+                <div class="grid-item">
+                    <h2>Subtitle 2</h2>
+                    <p>Content for subtitle 2.</p>
+                </div>
+                <div class="grid-item">
+                    <h2>Subtitle 3</h2>
+                    <p>Content for subtitle 3.</p>
+                </div>
+                <div class="grid-item">
+                    <h2>Subtitle 4</h2>
+                    <p>Content for subtitle 4.</p>
+                </div>
 		"""
 stc.html(html_temp)
 
